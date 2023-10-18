@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>React Fragment Example</title>
+  </head>
+  <body>
+    <div id="root"></div>
+
+    <!-- Include React library and ReactDOM (Development Version) -->
+    <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+
+    <!-- Include Babel script for JSX transpilation -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <script type="text/babel">
+      // <> ... </> is called a react fragment.
+      // It groups elements together without introducing an extra DOM element
+
+      function Hello({ name, date, time }) {
+        return (
+          <>
+            <h1>Hello</h1>
+            <p>today is {date}</p>
+            <p>the time is {time}</p>
+          </>
+        );
+      }
+
+      const today = new Date();
+      const options = {
+        weekday: "short",
+        year: "numeric",
+        month: "long",
+        day: "numeric",
+      };
+      const formattedDate = today.toLocaleDateString(undefined, options); // Format date with abbreviated day of the week
+      const time = today.toLocaleTimeString(); // Format the time using toLocaleTimeString
+
+      ReactDOM.render(
+        <Hello name="Sam" date={formattedDate} time={time} />,
+        document.getElementById("root")
+      );
+
+      console.log(today.toISOString());
+      console.log(formattedDate);
+      console.log(time);
+    </script>
+  </body>
+</html>
