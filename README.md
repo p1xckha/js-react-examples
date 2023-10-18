@@ -1,5 +1,8 @@
 # js-react-examples
 
+## Requirements
+- Node.js
+
 ## IDE
 
 - VS Code with prettier code formatter
