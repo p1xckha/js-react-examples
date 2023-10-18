@@ -16,6 +16,7 @@
 
     <!-- JSX code -->
     <script type="text/babel">
+      // We are going to display this data
       const data = [
         {
           country: "China",
@@ -62,13 +63,13 @@
         );
       }
 
-      const rootElement = document.getElementById("root");
-
       // Use map to create and render CountryInfo components for each country
       const countryElements = data.map((countryData) => (
-        <CountryInfo key={countryData.country} {...countryData} />
-      )); // ... in {...countryData} is the spread operator
+        <CountryInfo key={countryData.country} {...countryData} /> // ... is the spread operator
+      )); // {...countryData} is like country='United States' capitol="Washington, D.C.", etc.
 
+      // render
+      const rootElement = document.getElementById("root");
       ReactDOM.render(countryElements, rootElement);
     </script>
   </body>
