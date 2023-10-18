@@ -18,7 +18,7 @@
       // <> ... </> is called a react fragment.
       // It groups elements together without introducing an extra DOM element
 
-      function Hello({ name, date, time }) {
+      function Hello({ date, time }) {
         return (
           <>
             <h1>Hello</h1>
@@ -39,7 +39,7 @@
       const time = today.toLocaleTimeString(); // Format the time using toLocaleTimeString
 
       ReactDOM.render(
-        <Hello name="Sam" date={formattedDate} time={time} />,
+        <Hello date={formattedDate} time={time} />,
         document.getElementById("root")
       );
 
