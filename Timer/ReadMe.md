@@ -9,7 +9,7 @@ Use 7-zip, unrar, unzip, etc.
 
 <pre>cd PROJECT_FOLDER # where ReadMe is included</pre>
 
-- execute the following command:
+- execute the following commands:
 
 <pre>npm install
-`npm start</pre>
+npm start</pre>
