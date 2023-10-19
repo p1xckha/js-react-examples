@@ -13,6 +13,6 @@ You can use tools like 7-zip, unrar, unzip, etc.
 
 2. Change your current directory to the project folder where the ReadMe is included:
 
-<pre.cd PROJECT_FOLDER
+<pre>cd PROJECT_FOLDER
 npm install
 npm start</pre>
