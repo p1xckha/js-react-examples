@@ -1,4 +1,4 @@
-# How to run this app on one's local PC
+# How to run this app on your local PC
 
 ## extract this zip file
 
