@@ -1,15 +1,18 @@
-# How to run this app on your local PC
+# Run this app on CodeSandbox
 
-## extract this zip file
+[Here](https://codesandbox.io/s/proud-meadow-zqgc4r)
 
-Use 7-zip, unrar, unzip, etc.
+# Run this app on your local PC
+
+## Extract this zip file
+
+You can use tools like 7-zip, unrar, unzip, etc.
 
 ## Run
-- Open a terminal.
+1. Open a terminal.
 
-<pre>cd PROJECT_FOLDER # where ReadMe is included</pre>
+2. Change your current directory to the project folder where the ReadMe is included:
 
-- execute the following commands:
-
-<pre>npm install
+<pre.cd PROJECT_FOLDER
+npm install
 npm start</pre>
