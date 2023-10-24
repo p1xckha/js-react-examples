@@ -1,5 +1,4 @@
 import "./styles.css";
-// import { useEffect, useState } from "react";
 
 // import custom hooks
 import useInput from "./useInput.js";
@@ -25,8 +24,10 @@ export default function App() {
   return (
     <div className="App">
       <h1>Custom Hook example</h1>
+      <h2>useKey example</h2>
       <p>press any key</p>
       <Message />
+      <h2>useInput example</h2>
       <ul>
         {inputTypes.map((type, i) => (
           <li key={i}>
